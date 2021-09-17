@@ -1,0 +1,28 @@
+{
+  "name": "perforator",
+  "version": "1.0.0",
+  "description": "Cypher package",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon src/index.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PuzzlerDev/perforator.git"
+  },
+  "author": "PuzzlerDev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PuzzlerDev/perforator/issues"
+  },
+  "homepage": "https://github.com/PuzzlerDev/perforator#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "typescript": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^16.9.2",
+    "nodemon": "^2.0.12"
+  }
+}

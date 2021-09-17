@@ -1,2 +1,2 @@
-# perforator
+# Perforator
 A cipher package
