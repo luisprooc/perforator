@@ -1,4 +1,4 @@
-const { createHmac } = require('crypto');
+import { createHmac } from 'crypto';
 
 export const encryptPassword = ( password: string, secret:string ): string => {
   const hash = createHmac('sha512', secret)
