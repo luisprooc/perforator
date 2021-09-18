@@ -1,10 +1,14 @@
-import { createHmac } from 'crypto';
+const { createHmac } = require('crypto');
 
-export const encryptPassword = ( password: string, secret:string ): string => {
+const encryptPassword = ( password: string, secret: string ): string => {
+
+  if(!/\d{3}\w{7}/.test(secret)) throw new Error(`Secret must be`);
+
   const hash = createHmac('sha512', secret)
     .update(password)
     .digest('hex')
   return hash;
 }
 
-console.log(encryptPassword('I love you', 'mysecret'));
+
+module.exports = encryptPassword;
